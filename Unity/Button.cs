@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Botton : MonoBehaviour
+public class Button : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public GameObject my_botton;
+    public GameObject my_Button;
 
     public void OnClick()
     {
-        my_botton.GetComponent<Button>().interactable = false;
-        Debug.Log("Botton Clicked");
+        my_Button.GetComponent<Button>().interactable = false;
+        Debug.Log("Button Clicked");
         //Application.LoadLevel("SampleScene");
         gameObject.SetActive(false);
         if (gameObject.activeSelf == false)
@@ -29,3 +29,4 @@ public class Botton : MonoBehaviour
 
     }
 }
+
